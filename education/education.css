@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#page-container{
+    width: 80%;
+    margin: auto;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+header, footer{
+    background-color: black;
+    color: white;
+    padding: 2%;
+}
+/*HEADER*/
+header h1{
+    font: calc(18px + 1.7vw) "Lexend Giga";
+}
+header p{
+    font: calc(5px + 1.2vw) "Xanh Mono";
+}
+/*MAIN*/
+main{
+    background-color: white;
+    width: 70%;
+    text-align: center;
+    border: 2px solid black;
+    height: 135vh;
+}
+main h1{
+    padding: 5%;
+}
+main p{
+    font: calc(5px + 1.1vw) "Xanh Mono";
+    background-color: #FDE5EC;
+    border: solid 3px #FB9EC6;
+    margin: 4%;
+    padding: 2%;
+}
+main h1{
+    font: calc(15px + 2vw) "Lexend Giga";
+    font-weight: bold;
+}
+main h2{
+    font: calc(7px + 1.5vw) "Lexend Giga";
+    font-weight: bold;
+}
+main h3{
+    font: calc(5px + 1.2vw) "Xanh Mono";
+}
+#align-left{
+    text-align: left;
+    margin: 0 0 3% 3%;
+}
+.education{
+    text-align: left;
+    margin-left: 3%;
+    font: calc(4px + 1.2vw) "Lexend Giga";
+}
+#ed-flex{
+    display: flex;
+    flex-direction: row;
+}
+#ed-flex-1, #ed-flex-2{
+    width: 50%
+}
+.rc{
+    margin: 3% 0;
+    font: calc(5px + 1.7vw) "Xanh Mono";
+    font-weight: bold;
+}
+#bs{
+    color: #FB9EC6;
+    font-weight: bold;
+}
+img{
+    margin-bottom: 3%;
+    border: solid 3px black;
+    max-width: 50%;
+}
+#name{
+    color: #FB9EC6;
+}
+a:hover {
+    color: #FB9EC6;
+}
+.class:hover{
+    font-weight: bold;
+    background-color: white;
+}
+/*NAVIGATION*/
+nav{
+    background-color: black;
+    width: 30%;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav li{
+    padding: 5%;
+    margin: 10%;
+    background-color: white;
+    border: .3vw solid black;
+    font: calc(5px + 1.5vw) "Xanh Mono";
+}
+/*FOOTER*/
+footer{
+    text-align: center;
+    font: calc(3px + 1.1vw) "Xanh Mono";
+}
+footer a{
+    color: white;
+}
+
+@media screen and (max-width: 750px){
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    main, nav{
+        width: 100%;
+    }
+    main{
+        height: 100vh;
+    }
+    main p{
+        font: calc(6px + 1.5vw) "Xanh Mono";
+    }
+    header{
+        text-align: center;
+    }
+    nav{
+        padding-bottom: 2%;
+    }
+    nav li{
+        display: inline;
+        padding: 1% 1.5%;
+        margin: 1%;
+        background-color: white;
+        border: .3vw solid black;
+        font: calc(3px + 1.2vw) "Xanh Mono";
+    }
+}

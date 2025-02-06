@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#page-container{
+    width: 80%;
+    margin: auto;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+header, footer{
+    background-color: black;
+    color: white;
+    padding: 2%;
+}
+/*HEADER*/
+header h1{
+    font: calc(18px + 1.7vw) "Lexend Giga";
+}
+header p{
+    font: calc(5px + 1.2vw) "Xanh Mono";
+}
+/*MAIN*/
+main{
+    background-color: white;
+    width: 70%;
+    text-align: center;
+    border: 2px solid black;
+    height: 170vh;
+}
+main h1{
+    padding: 5%;
+}
+main p{
+    font: calc(2px + 1.1vw) "Crimson Text";
+}
+main h1{
+    font: calc(15px + 2vw) "Lexend Giga";
+    font-weight: bold;
+}
+main h2{
+    font: calc(7px + 1.5vw) "Lexend Giga";
+}
+img{
+    margin: 0 3% 3% 3%;
+    border: 5px solid black;
+    max-width: 30%;
+}
+.role{
+    font: calc(5px + 1.5vw) "Xanh Mono";
+    text-align: left;
+}
+.org{
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    font: calc(4px + 2vw) "Lexend Giga";
+    text-align: left;
+    padding: 0;
+}
+.description{
+    width: 70%;
+}
+a:hover{
+    color: #FB9EC6;
+}
+/*NAVIGATION*/
+nav{
+    background-color: black;
+    width: 30%;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav li{
+    padding: 5%;
+    margin: 10%;
+    background-color: white;
+    border: .3vw solid black;
+    font: calc(5px + 1.5vw) "Xanh Mono";
+}
+/*FOOTER*/
+footer{
+    text-align: center;
+    font: calc(3px + 1.1vw) "Xanh Mono";
+}
+footer a{
+    color: white;
+}
+
+@media screen and (max-width: 750px){
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    main, nav{
+        width: 100%;
+    }
+    main{
+        height: 130vh;
+    }
+    main p{
+        font: calc(6px + 1.5vw) "Xanh Mono";
+    }
+    header{
+        text-align: center;
+    }
+    nav{
+        padding-bottom: 2%;
+    }
+    nav li{
+        display: inline;
+        padding: 1% 1.5%;
+        margin: 1%;
+        background-color: white;
+        border: .3vw solid black;
+        font: calc(3px + 1.2vw) "Xanh Mono";
+    }
+}

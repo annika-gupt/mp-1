@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#page-container{
+    width: 80%;
+    margin: auto;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+header, footer{
+    background-color: black;
+    color: white;
+    padding: 2%;
+}
+/*HEADER*/
+header h1{
+    font: calc(18px + 1.7vw) "Lexend Giga";
+}
+header p{
+    font: calc(5px + 1.2vw) "Xanh Mono";
+}
+/*MAIN*/
+main{
+    background-color: white;
+    width: 70%;
+    text-align: center;
+    border: 2px solid black;
+    height: 350vh;
+}
+main h1{
+    padding: 5%;
+}
+main p{
+    font: calc(5px + 1.1vw) "Xanh Mono";
+    background-color: #FDE5EC;
+    border: solid 3px #FB9EC6;
+    margin: 5%;
+    padding: 3%;
+}
+main h1{
+    font: calc(15px + 2vw) "Lexend Giga";
+    font-weight: bold;
+}
+main h2{
+    font: calc(7px + 1.5vw) "Lexend Giga";
+}
+main h3{
+    font: calc(5px + 2.5vw) "Xanh Mono";
+    padding: 7% 0 3% 0;
+}
+.slide{
+    max-width: 80%;
+    margin: auto;
+}
+.link{
+    font: calc(5px + 1.3vw) "Lexend Giga";
+    color: black;
+    text-decoration: none;
+}
+#link1, #link2{
+    margin-top: 7%;
+}
+input{
+    display: block;
+    width: 50%;
+    margin: 5% auto;
+    padding: 3%;
+    font: calc(7px + 1.5vw) "Lexend Giga";
+    background-color: #FDE5EC;
+    border: solid 3px #FB9EC6;
+}
+button{
+    padding: 2%;
+    border-radius: 20%;
+    background-color: #FDE5EC;
+    border: solid 3px #FB9EC6;
+    color: black;
+    font: calc(4px + 1.3vw) "Xanh Mono";
+    font-weight: bold;
+}
+button:hover{
+    background-color: white;
+    font: calc(7px + 1.3vw) "Xanh Mono";
+}
+input:hover{
+    background-color: white;
+}
+a:hover {
+    color: #FB9EC6;
+}
+/*NAVIGATION*/
+nav{
+    background-color: black;
+    width: 30%;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav li{
+    padding: 5%;
+    margin: 10%;
+    background-color: white;
+    border: .3vw solid black;
+    font: calc(5px + 1.5vw) "Xanh Mono";
+}
+/*FOOTER*/
+footer{
+    text-align: center;
+    font: calc(3px + 1.1vw) "Xanh Mono";
+}
+footer a{
+    color: white;
+}
+
+@media screen and (max-width: 750px){
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    main, nav{
+        width: 100%;
+    }
+    main{
+        height: 250vh;
+    }
+    main p{
+        font: calc(6px + 1.5vw) "Xanh Mono";
+    }
+    header{
+        text-align: center;
+    }
+    nav{
+        padding-bottom: 2%;
+    }
+    nav li{
+        display: inline;
+        padding: 1% 1.5%;
+        margin: 1%;
+        background-color: white;
+        border: .3vw solid black;
+        font: calc(3px + 1.2vw) "Xanh Mono";
+    }
+}
