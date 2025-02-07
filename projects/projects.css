@@ -88,8 +88,8 @@ button:hover{
 input:hover{
     background-color: white;
 }
-a:hover {
-    color: #FB9EC6;
+a:hover{
+    background-color: #FDE5EC;
 }
 /*NAVIGATION*/
 nav{

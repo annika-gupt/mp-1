@@ -51,7 +51,7 @@ img{
     max-width: 50%;
 }
 a:hover{
-    color: #FB9EC6;
+    background-color: #FDE5EC;
 }
 #work1, #work2{
     margin-bottom: 8%;

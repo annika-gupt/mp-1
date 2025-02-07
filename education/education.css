@@ -81,8 +81,8 @@ img{
 #name{
     color: #FB9EC6;
 }
-a:hover {
-    color: #FB9EC6;
+a:hover{
+    background-color: #FDE5EC;
 }
 .class:hover{
     font-weight: bold;
